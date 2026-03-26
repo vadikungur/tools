@@ -1,33 +1,27 @@
 ```
-# Compiled and build artifacts
+# Compressed files
+*.zip
+
+# Build artifacts
+build/
+dist/
 *.o
 *.obj
 *.a
-*.lib
-*.dll
 *.so
-*.dylib
+*.dll
 *.exe
 *.out
 
-# Qt/C++ specific
-*.pro.user
-*.pro.user.*
-*.qbs.user
-*.qbs.user.*
-moc_*.cpp
-qrc_*.cpp
-ui_*.h
-*.qm
-Makefile
-Makefile.Debug
-Makefile.Release
-debug/
-release/
-
 # Dependencies
-*.pro.user
-*.pri
+node_modules/
+venv/
+.venv/
+__pycache__/
+.mypy_cache/
+.pytest_cache/
+target/
+.gradle/
 
 # Logs and temp files
 *.log
@@ -42,10 +36,8 @@ release/
 # Editors
 .vscode/
 .idea/
-*.swp
-*.swo
 
-# OS
+# System files
 .DS_Store
 Thumbs.db
 
@@ -54,15 +46,9 @@ coverage/
 htmlcov/
 .coverage
 
-# Build systems
-build/
-dist/
-target/
-.gradle/
-.mypy_cache/
-.pytest_cache/
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
+# CMake specific
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
 ```
